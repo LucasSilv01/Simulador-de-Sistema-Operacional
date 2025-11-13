@@ -1,5 +1,5 @@
 
-# 🧠 Simulador de Sistema Operacional em Python
+#  Simulador de Sistema Operacional em Python
 
 **Autor:** José Lucas da Silva Cardoso  
 **Disciplina:** Sistemas Operacionais  
@@ -7,7 +7,7 @@
 
 ---
 
-## 📘 Descrição do Projeto
+## Descrição do Projeto
 
 Este projeto implementa um **simulador de Sistema Operacional (SO)** desenvolvido em **Python**, com foco no **gerenciamento de processos e algoritmos de escalonamento de CPU**.
 
@@ -20,41 +20,8 @@ O simulador permite **criar, listar, bloquear, desbloquear e finalizar processos
 
 Este projeto tem fins **didáticos**, servindo como ferramenta de apoio ao ensino de **Sistemas Operacionais**.
 
----
 
-## ⚙️ Requisitos
-
-Antes de executar o programa, verifique se você possui o **Python 3.10 ou superior** instalado.
-
-Você pode verificar a versão com:
-
-```bash
-python --version
-```
-
----
-
-## 🚀 Como Rodar o Simulador
-
-1. **Clone o repositório** ou baixe os arquivos:
-
-```bash
-git clone https://github.com/usuario/simulador-sistema-operacional.git
-```
-
-2. **Acesse o diretório do projeto:**
-
-```bash
-cd simulador-sistema-operacional
-```
-
-3. **Execute o simulador:**
-
-```bash
-python main.py
-```
-
-4. O terminal entrará no modo interativo:
+O terminal entrará no modo interativo:
 
 ```
 SO>
@@ -64,9 +31,9 @@ A partir daí, você pode digitar comandos para **criar, listar ou executar proc
 
 ---
 
-## 💻 Exemplo de Uso
+## Exemplo de Uso
 
-### 🟢 Criando processos
+### Criando processos
 
 ```bash
 SO> create Chrome
@@ -74,7 +41,7 @@ SO> create Word
 SO> create VSCode
 ```
 
-### 🟣 Listando processos
+### Listando processos
 
 ```bash
 SO> list
@@ -89,7 +56,7 @@ PID  Nome     Estado       CPU  Memória  Prioridade
 3    VSCode   Pronto        4      36        2
 ```
 
-### 🔵 Executando simulação com Round Robin
+### Executando simulação com Round Robin
 
 ```bash
 SO> run rr
@@ -108,7 +75,7 @@ Todos os processos finalizados!
 
 ---
 
-## 🧩 Tabela de Comandos
+## Tabela de Comandos
 
 | Comando | Sintaxe | Descrição |
 |----------|----------|-----------|
@@ -122,30 +89,30 @@ Todos os processos finalizados!
 
 ---
 
-## 🧮 Algoritmos de Escalonamento Implementados
+## Algoritmos de Escalonamento Implementados
 
-### ⚪ FIFO — *First In, First Out*
+### FIFO — *First In, First Out*
 O processo **primeiro a chegar** é o **primeiro a ser executado**.  
 Não há preempção: o processo roda até terminar.  
 Simples, porém pouco eficiente em cenários com processos longos.
 
-### 🟡 SJF — *Shortest Job First*
+### SJF — *Shortest Job First*
 O processo com **menor tempo de CPU restante** é escolhido primeiro.  
 Reduz o tempo médio de espera, mas pode causar **starvation** (bloqueio) de processos longos.
 
-### 🔵 RR — *Round Robin*
+### RR — *Round Robin*
 Usa um **quantum fixo (2 ciclos)**.  
 Cada processo recebe um pequeno intervalo de CPU antes de retornar à fila.  
 Garante **justiça** na distribuição do tempo de CPU entre todos os processos.
 
-### 🟣 PRIO — *Prioridades*
+### PRIO — *Prioridades*
 Cada processo possui uma **prioridade numérica** (1 = mais alta).  
 O sistema sempre escolhe o processo de **maior prioridade**.  
 Ideal para sistemas com **tarefas críticas**.
 
 ---
 
-## 📊 Estados dos Processos
+## Estados dos Processos
 
 | Estado | Descrição |
 |---------|------------|
@@ -156,19 +123,7 @@ Ideal para sistemas com **tarefas críticas**.
 
 ---
 
-## 🧱 Estrutura do Projeto
-
-```
-/simulador-sistema-operacional
-│
-├── main.py          # Código principal do simulador
-├── README.md        # Documentação do projeto
-└── requirements.txt # Dependências (opcional)
-```
-
----
-
-## 🧭 Objetivos Didáticos
+## Objetivos Didáticos
 
 - Demonstrar o funcionamento dos **principais algoritmos de escalonamento de CPU**.
 - Simular o **ciclo de vida dos processos** em um ambiente controlado.
@@ -176,15 +131,7 @@ Ideal para sistemas com **tarefas críticas**.
 
 ---
 
-## 🧩 Possíveis Melhorias
-
-- Implementar **escalonamento preemptivo (SRTF, Prioridades Preemptivas)**.  
-- Adicionar **interface gráfica (GUI)** com fila visual de processos.  
-- Gerar **relatórios de desempenho** (turnaround, tempo médio de espera etc).  
-
----
-
-## 🏁 Conclusão
+## Conclusão
 
 O simulador cumpre o papel de representar de forma prática e acessível os **conceitos fundamentais de escalonamento de processos**.  
 Por meio da interação no terminal, é possível compreender **como diferentes algoritmos afetam o desempenho e a ordem de execução** dos processos em um sistema operacional.
