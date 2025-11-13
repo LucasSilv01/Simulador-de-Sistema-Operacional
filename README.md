@@ -96,19 +96,31 @@ O processo **primeiro a chegar** é o **primeiro a ser executado**.
 Não há preempção: o processo roda até terminar.  
 Simples, porém pouco eficiente em cenários com processos longos.
 
+<img width="1192" height="444" alt="image" src="https://github.com/user-attachments/assets/ee04c16d-88ea-42b1-a17a-54b69b2f4223" />
+
+
 ### SJF — *Shortest Job First*
 O processo com **menor tempo de CPU restante** é escolhido primeiro.  
 Reduz o tempo médio de espera, mas pode causar **starvation** (bloqueio) de processos longos.
+
+<img width="1496" height="406" alt="image" src="https://github.com/user-attachments/assets/4d9f1a2d-f090-44c2-a104-4c62717b1530" />
+
 
 ### RR — *Round Robin*
 Usa um **quantum fixo (2 ciclos)**.  
 Cada processo recebe um pequeno intervalo de CPU antes de retornar à fila.  
 Garante **justiça** na distribuição do tempo de CPU entre todos os processos.
 
+<img width="1192" height="520" alt="image" src="https://github.com/user-attachments/assets/4d2543ce-4ee4-4efd-94e0-18e82a4a7dc8" />
+
+
 ### PRIO — *Prioridades*
 Cada processo possui uma **prioridade numérica** (1 = mais alta).  
 O sistema sempre escolhe o processo de **maior prioridade**.  
 Ideal para sistemas com **tarefas críticas**.
+
+<img width="1416" height="406" alt="image" src="https://github.com/user-attachments/assets/ee3e147a-1920-4f75-8a8d-d563a702b7a5" />
+
 
 ---
 
